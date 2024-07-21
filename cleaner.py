@@ -19,7 +19,6 @@ def filenames():
         filename = os.fsdecode(file)
         print(filename)
 
-
 def clean_temp_folder():
     """Function to clean specified folder"""
     
