@@ -1,5 +1,6 @@
 """os module"""
 import os
+
 import json
 import schedule
 
@@ -12,7 +13,6 @@ time_to_remove = config["time_24h"]
 directory = os.fsencode(directory_in_str)
 
 def clean_temp_folder():
-    """Function to clean specified folder"""
     failed_files = []
     succesfull = False
     filecount = 0
