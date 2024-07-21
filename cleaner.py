@@ -1,7 +1,6 @@
 """os module"""
 import os
 import json
-import time
 import schedule
 
 
@@ -43,4 +42,3 @@ schedule.every().day.at(time_to_remove).do(clean_temp_folder)
 
 while True:
     schedule.run_pending()
-    time.sleep(1)
