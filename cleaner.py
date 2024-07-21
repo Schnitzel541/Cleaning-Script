@@ -36,6 +36,8 @@ def clean_temp_folder():
             print(error)
     if succesfull == True:
         print(f"Successfully ran clean-up script at {time_to_remove}, removed {filecount} files")
+    else:
+        print(f"A file could not be deleted, please check {config["directory_to_remove"]}")
 
 schedule.every().day.at(time_to_remove).do(filenames)
 schedule.every().day.at(time_to_remove).do(clean_temp_folder)
